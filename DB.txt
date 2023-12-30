@@ -1,0 +1,39 @@
+login
+    id pk auto_increment
+    username (varchar 30)
+    password(varchar 50)
+    role (varchar 10)
+
+customer
+    id pk auto_increment
+    name (varchar 30)
+    email(varchar 50)
+    phone(varchar 30)
+   
+    username (varchar 30)
+    password(varchar 50)
+    loginid fk (login id)
+
+
+
+TABLE QUERY
+
+-- Create the login table
+CREATE TABLE login (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(30),
+    password VARCHAR(50),
+    role VARCHAR(10)
+);
+
+-- Create the customer table
+CREATE TABLE customer (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(30),
+    email VARCHAR(50),
+    phone VARCHAR(30),
+    username VARCHAR(30),
+    password VARCHAR(50),
+    loginid INT,
+    FOREIGN KEY (loginid) REFERENCES login(id)
+);
