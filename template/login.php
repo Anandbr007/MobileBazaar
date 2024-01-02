@@ -45,8 +45,8 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    include("../model/user.php");
-    $user = new user();
+    include("../model/auth.php");
+    $user = new auth();
 
     $username = $_REQUEST['username'];
     $password = $_REQUEST['password'];

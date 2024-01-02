@@ -29,7 +29,7 @@
 
                     <select name="role" class="input2">
                         <option value="user" >User</option>
-                        <option value="admin">Seller</option>
+                        <option value="seller">Seller</option>
                     </select>
 
                     <input class="submit" type="submit" value="submit">

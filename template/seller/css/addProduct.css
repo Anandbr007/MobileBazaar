@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainbox{
+    width: 100%;
+    height: 100vh;
+    margin-top: -28px;
+}
+.heading{
+  margin-top: 95px;
+  font-size: 40px;
+  font-family: sans-serif;
+  height: 57px;
+ text-align: center;
+}
+.inner-box{
+    height: 700px;
+    width: 80%;
+    margin-left: 191px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    height: 700px;
+    width: 1018px;
+}
+.form-box form{
+    width: 100%;
+    height: 503px;
+    text-align: center;
+    margin-top: 115px;
+}
+.name{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 169px;
+}
+
+.form-textbox{
+    height: 27px;
+    width: 384px;
+    margin-left: 42px;
+}
+.form-textarea{
+    width: 384px;
+    height: 98px;
+    font-size: 20px;
+    position: relative;
+    left: 123px;
+    margin-top: 14px;
+    resize: none;
+}
+.form-img{
+    margin-top: 7px;
+    margin-left: 42px;
+  
+    font-size: 20px;
+}
+.form-submit{
+    background-color: #000000;
+    margin-top: 20px;
+    width: 123px;
+    height: 32px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.name-desc{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 76px;
+    top: -42px;
+}
