@@ -8,7 +8,7 @@ class product
     var $_db;
     public function __construct($db)
     {
-        // $db = ;
+       
         $this->_db = $db->con;
     }
 

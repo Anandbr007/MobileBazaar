@@ -3,7 +3,7 @@ include('../model/product.php');
 include('../database/Db-connect.php');
 $product=new product(new DB_CON());
 $products=$product->fetchProduct();
-// print_r($products);exit();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ $products=$product->fetchProduct();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../layout/css/footer.css">
     <link rel="stylesheet" href="../layout/css/header.css">
-    <link rel="stylesheet" href="../template/css/productDisplay.css">
+    <link rel="stylesheet" href="/demo proj-ecommerce website/template/css/productDisplay.css">
     <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
     <title>home</title>
 </head>
@@ -32,7 +32,7 @@ $products=$product->fetchProduct();
                 <div class="col-3">
                     <div class="card1">
                         <div class="img-card">
-                            <a href=""><img src="<?= $row['image']?>" /></a>
+                            <a href=""><img src="./seller/uploads/ <?=$row['image']?>" /></a>
                         </div>
                         <div class="title-card">
                             <a href="" style="text-decoration: none; color: black; ">

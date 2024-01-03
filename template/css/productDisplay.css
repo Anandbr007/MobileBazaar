@@ -1,7 +1,7 @@
 .mainbox{
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+   
 }
 .heading{
   margin-left: 895px;
@@ -71,8 +71,6 @@
 }
 
 .cart-container {
-  /* display: flex; */
-  /* align-items: center; */
   margin-left: 179px;
   
 }

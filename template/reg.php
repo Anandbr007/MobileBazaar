@@ -46,8 +46,9 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    include_once("../database/Db-connect.php");
     include_once("../model/user.php");
-    $user = new User();
+    $user = new User(new DB_CON());
 
     $name = $_REQUEST['name'];
     $email = $_REQUEST['email'];

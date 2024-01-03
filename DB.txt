@@ -11,11 +11,22 @@ customer
     phone(varchar 30)
     username (varchar 30)
     password(varchar 50)
-    loginid fk (login id)
+    loginid (lnt)
+
+product
+    product_id pk auto_increment
+    prod_name (varchar 30)
+    company_name(varchar 50)
+    description(text)
+    price (varchar 30)
+    quantity(varchar 50)
+    image (varchar 200)
+    rating (varchar 30)
+    review (varchar 30)
+    mrp (varchar 30)
+    discount (varchar 30)
 
 
-
-TABLE QUERY
 
 -- Create the login table
 CREATE TABLE login (
@@ -36,3 +47,19 @@ CREATE TABLE customer (
     loginid INT,
     FOREIGN KEY (loginid) REFERENCES login(id)
 );
+
+-- Create the product table
+CREATE TABLE product (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    prod_name VARCHAR(30),
+    company_name VARCHAR(50),
+    description TEXT,
+    price VARCHAR(30),
+    quantity VARCHAR(50),
+    image VARCHAR(200),
+    rating VARCHAR(30),
+    review VARCHAR(30),
+    mrp VARCHAR(30),
+    discount VARCHAR(30)
+);
+

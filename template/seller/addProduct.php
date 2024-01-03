@@ -22,7 +22,7 @@
 
         <div class="inner-box">
             <div class="form-box">
-                <form action="" method="post">
+                <form  method="post" enctype="multipart/form-data" >
                     <label for="" class="name">Product Name</label>
                     <input type="text" name="name" class="form-textbox"><br>
 
@@ -38,9 +38,6 @@
                     <label for="" class="name" style="    margin-left: 241px;">Quantity</label>
                     <input type="text" name="quantity" class="form-textbox"><br>
 
-                    <label for="" class="name" style="    margin-left: 267px;">Image</label>
-                    <input type="text" name="image" class="form-textbox"><br>
-
                     <label for="" class="name" style="    margin-left: 263px;">Rating</label>
                     <input type="text" name="rating" class="form-textbox"><br>
 
@@ -53,8 +50,8 @@
                     <label for="" class="name" style="    margin-left: 235px;">Discount</label>
                     <input type="text" name="discount" class="form-textbox"><br>
 
-                    <!-- <label for="" class="name" style="    margin-left: 198px;">Add Image</label>
-                        <input type="file" name="image" class="form-img" accept="Image/*"><br> -->
+                    <label class="name" style=" margin-left: 198px;">Add Image</label>
+                        <input type="file" name="image" class="form-img" accept="Image/*"><br>
 
                     <input type="submit" name="" id="" value="submit" class="form-submit">
                 </form>
@@ -86,6 +83,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $review = $_REQUEST['review'];
     $mrp = $_REQUEST['mrp'];
     $discount = $_REQUEST['discount'];
+
+    $imgFilename=basename($_FILES['image']['name']);
+    $targetDir="./uploads/".$imgFilename;
+    
+    $image=move_uploaded_file($_FILES['image']['tmp_name'],$targetDir);;
+
     // insert
     $res = $product->insert($name, $company, $description,$price,$quantity,$image,$rating,$review,$mrp,$discount);
     if ($res) {
@@ -94,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </script>";
     } else {
         echo "<script>
-                alert('Registration failed');
+                alert('Product Registration failed');
             </script>";
     }
 }
