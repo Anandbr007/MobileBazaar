@@ -17,7 +17,7 @@ if ($uri=="login.php"||$uri=="reg.php") {
             <label class="logo"><a href="home.html">MobileBazaar</a></label>
 
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="/demo proj-ecommerce website/index.php">Home</a></li>
                 <li><a href="/demo proj-ecommerce website/template/productDisplay.php">Product</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
@@ -31,14 +31,14 @@ if ($uri=="login.php"||$uri=="reg.php") {
                       <a href='/demo proj-ecommerce website/template/login.php' class='navlogin' style='margin-left: 20px; top: -163px;''>Login</a>";
             } else {
                 echo '<i class="fa-solid fa-cart-shopping fa-lg " style="color: white; position: relative;left: 1699px;top: -159px;"></i>
-                <a href="addtoCart.html"><p style="color: white;
+                <p style="color: white;
                     position: relative;
                     left: 1696px;
                     top: -186px;
                     font-size: 16px;
                     font-family: sans-serif;
                     width: 34px;
-                    padding-top: 30px;">Cart</p></a>
+                    padding-top: 30px;">Cart</p>
                 
                 <i class="fa-solid fa-user fa-lg dropbtn" style="color: #ffffff;position: relative;left: 1768px;top: -250px;"></i>
                 <div class="dropdown">

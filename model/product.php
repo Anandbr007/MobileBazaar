@@ -1,6 +1,6 @@
 <?php
 
-// Database connect 
+
 // include_once("../database/Db-connect.php");
 
 class product

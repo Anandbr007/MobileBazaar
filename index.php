@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./layout/css/footer.css">
     <link rel="stylesheet" href="./layout/css/header.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
-    <title>home</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+   
 </head>
 <body>
     <!-- header -->
@@ -16,7 +16,7 @@
     </header>
 
     <!-- main -->
-    <main >
+    <main>
         <section>
             <h3 style=" position: relative;top: 164px;color: white;font-size: 70px;left: 85px;font-family: sans-serif;">Discover Your Perfect Portable <br> Companion. Shop the<br> Latest in Phones</h3>
             <div class="outer-body">

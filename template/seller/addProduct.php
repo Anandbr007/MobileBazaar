@@ -86,8 +86,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $imgFilename=basename($_FILES['image']['name']);
     $targetDir="./uploads/".$imgFilename;
-    
-    $image=move_uploaded_file($_FILES['image']['tmp_name'],$targetDir);;
+    move_uploaded_file($_FILES['image']['tmp_name'],$targetDir);
+    $image=$imgFilename;
 
     // insert
     $res = $product->insert($name, $company, $description,$price,$quantity,$image,$rating,$review,$mrp,$discount);

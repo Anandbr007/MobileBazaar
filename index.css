@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
 }
-.outer-body{
+.outer-bodys{
     width: 100%;
     height: 100%;
     margin-top: -240px;
    
 }
-.body{
+.bodys{
     z-index: -1;
     width: 100%;
     height: 860px;
@@ -18,7 +18,7 @@
     background-attachment: fixed;
     
 }
-.card{
+.cards{
     left: 220px;
     height: 128px;
     width: 468px;
